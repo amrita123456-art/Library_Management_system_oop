@@ -1,0 +1,6 @@
+*.exe
+*.out
+*.o
+books.txt
+issues.txt
+.vscode/

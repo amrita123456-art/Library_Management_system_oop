@@ -1,0 +1,19 @@
+flowchart TD
+    A([Start]) --> B[Load saved data]
+    B --> C[Display menu]
+    C --> D{User choice}
+    D -->|Add book| E[Enter book details]
+    D -->|Display| F[Show all books]
+    D -->|Search| G[Search by ID or title]
+    D -->|Issue| H[Check availability and issue]
+    D -->|Return| I[Verify record and return]
+    D -->|Issued list| J[Show active issue records]
+    E --> K[Save data]
+    H --> K
+    I --> K
+    F --> C
+    G --> C
+    J --> C
+    K --> C
+    D -->|Exit| L[Save data]
+    L --> M([End])
